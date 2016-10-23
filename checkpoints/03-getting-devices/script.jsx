@@ -12,11 +12,11 @@ function Status(props) {
 
 function DataTable(props) {
     let rows = props.data.map(d => {
-        return (<tr>{d.name}</tr>);
+        return (<tr><td>{d.name}</td></tr>);
     });
     return (
         <table>
-            <tr>Device Names</tr>
+            <tr><th>Device Names</th></tr>
             {rows}
         </table>
     );
