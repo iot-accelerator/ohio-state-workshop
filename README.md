@@ -50,3 +50,5 @@ Promise.all(picturePromises).then(results => {
 ```
 
 ## Tutorial
+
+Get started with the tutorial [here](https://github.com/iot-accelerator/ohio-state-workshop/blob/master/tutorial.md).
