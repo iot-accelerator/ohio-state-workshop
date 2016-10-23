@@ -3,7 +3,7 @@ Particle workshop at Ohio State University
 
 ## Introduction
 
-Once we are done with this workshop, we are going to be able to read data from sensors connected to Particle Photons in our web browser. We are going to start with an empty web app using the React view library and then add server status, a data reading service and finally a table that displays sensor values.
+Once we are done with this workshop, we are going to be able to read data from sensors connected to Particle Photons in our web browser. We are going to start with an empty web app using the React view library and then add server status, a data reading service and finally, a table that displays sensor values.
 
 ## Key Concepts
 
