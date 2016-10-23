@@ -21,7 +21,7 @@ getProfilePictureFor('yashdalfthegray').then(picture => {
 });
 ```
 
-### Functional programming - `Array.map`
+### Functional programming - `Array.map()`
 
 Every array in JavaScript has helper methods to help users iterate over the elements and perform certain actions to each one. One such function is `map()`. `map()` lets us transform each element in a given array and returns a new array with it. For example,
 
@@ -31,7 +31,7 @@ Every array in JavaScript has helper methods to help users iterate over the elem
 
 A common pattern in JavaScript is the async operations map. This is useful in the case where we have an array of data which will serve as input to an async function. Performing a map will call the async operation on each of elements and return an array of promises. You can either then use another functional programming concept like `reduce` or `filter` or wait for all of them to pass as we'll see in the next section.
 
-### Asynchronous wait for all `Promise.all`
+### Asynchronous wait for all `Promise.all()`
 
 There are some cases where you want to kick off a few async operations and then also wait for all of the results to roll in. One way is that you could start the first operation, then call `.then()` for the result for the first one, then start the second one, then call `.then()` for the result of the second one and so on. This might be valid for things that *need* to happen in sequence but that isn't a requirement, we can take advantage of parallel async operations using a `map` and `Promise.all`.
 
@@ -45,7 +45,7 @@ Promise.all(picturePromises).then(results => {
     // results are now 3 profile pictures
 }).catch(error => {
     // if anything went wrong with any of the operations
-    // this will run instead of the .then() above. 
+    // this will run instead of the .then() above.
 });
 ```
 
