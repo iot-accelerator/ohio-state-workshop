@@ -7,6 +7,10 @@ Once we are done with this workshop, we are going to be able to read data from s
 
 ## Key Concepts
 
+### MVC
+
+MVC or Model-View-Controller is a common way of designing web applications and pages using a Javascript framework. 
+
 ### Asynchronous operations - `aPromise.then()`
 
 The standard way of performing asynchronous operations in Javascript is something called Promises. An operation that uses promises is basically saying that the operation has started and at some point in the future, I will give you some result. Operations like such "return promises" which will then resolve into some data that you care about. You use the `then()` function to get access to the value and the `catch()` function to get access to any errors that might have occurred.
