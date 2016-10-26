@@ -11,7 +11,7 @@ Once we are done with this workshop, we are going to be able to read data from s
 
 MVC or Model-View-Controller is a common way of designing web applications and pages using a Javascript framework.
 
-![MVC Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/2000px-MVC-Process.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/2000px-MVC-Process.svg.png" width="240" />
 
 ### Asynchronous operations - `aPromise.then()`
 
