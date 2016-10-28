@@ -4,5 +4,5 @@ function Heading(props) {
 
 ReactDOM.render(
     <Heading text="Ohio State Workshop" />,
-    document.getElementById('example')
+    document.getElementById('react-root')
 );
