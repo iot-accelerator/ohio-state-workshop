@@ -30,3 +30,5 @@ ReactDOM.render(
     document.getElementById('react-root')
 );
 ```
+
+As you can see we're using the `Heading` component with the `text` attribute right in the `render` call. Using the `text` attribute puts a key called `text` with the value was assigned to `text`. Telling ReactDOM to render the `<Heading>` component replaces the React component with the HTML from the `Heading` stateless component. 
