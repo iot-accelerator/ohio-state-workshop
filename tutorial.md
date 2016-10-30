@@ -38,7 +38,7 @@ As you can see we're using the `Heading` component with the `text` attribute rig
 The next step is to create the high level stateful component. Usually, React applications that use stateless components utilize something like Redux to manage state but to keep things simple, we'll just create a top level `Application` component which will handle all the state of the app. We will also start talking to the server that we are going to get data from in this step too.
 
 ```jsx
-const AppComponent = react.createClass({
+const AppComponent = React.createClass({
     getInitialState: function() {
         return {
             status: 'unknown'
@@ -63,3 +63,5 @@ const AppComponent = react.createClass({
     }
 })
 ```
+
+There is a lot of code here so lets break it down and digest it bit by bit. This is the first time that we're using the stateful way of declaring React components. Passing an object into `React.createClass()` will create a React component for you which you can then assign to a variable and use just like the stateless component we say earlier. There are some required properties on the object like a function called `render` and a function called `getInitialState`. 
