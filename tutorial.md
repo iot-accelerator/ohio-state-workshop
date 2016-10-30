@@ -31,4 +31,8 @@ ReactDOM.render(
 );
 ```
 
-As you can see we're using the `Heading` component with the `text` attribute right in the `render` call. Using the `text` attribute puts a key called `text` with the value was assigned to `text`. Telling ReactDOM to render the `<Heading>` component replaces the React component with the HTML from the `Heading` stateless component. 
+As you can see we're using the `Heading` component with the `text` attribute right in the `render` call. Using the `text` attribute puts a key called `text` with the value was assigned to `text`. Telling ReactDOM to render the `<Heading>` component replaces the React component with the HTML from the `Heading` stateless component.
+
+## Creating the skeleton
+
+The next step is to create the high level stateful component. Usually, React applications that use stateless components utilize something like Redux to manage state but to keep things simple, we'll just create a top level `Application` component which will handle all the state of the app. 
