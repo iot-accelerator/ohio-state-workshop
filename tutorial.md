@@ -35,4 +35,31 @@ As you can see we're using the `Heading` component with the `text` attribute rig
 
 ## Creating the skeleton
 
-The next step is to create the high level stateful component. Usually, React applications that use stateless components utilize something like Redux to manage state but to keep things simple, we'll just create a top level `Application` component which will handle all the state of the app. 
+The next step is to create the high level stateful component. Usually, React applications that use stateless components utilize something like Redux to manage state but to keep things simple, we'll just create a top level `Application` component which will handle all the state of the app. We will also start talking to the server that we are going to get data from in this step too.
+
+```jsx
+const AppComponent = react.createClass({
+    getInitialState: function() {
+        return {
+            status: 'unknown'
+        };
+    },
+    componentWillMount: function() {
+        const self = this;
+
+        particleService.getStatus().then(status => {
+            self.setState({
+                status: status.apiStatus
+            });
+        });
+    },
+    render: function() {
+        return (
+            <div>
+                <Heading text="Ohio State Workshop" />
+                <Status text={this.state.status} />
+            </div>
+        );
+    }
+})
+```
