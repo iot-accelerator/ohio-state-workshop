@@ -64,4 +64,6 @@ const AppComponent = React.createClass({
 })
 ```
 
-There is a lot of code here so lets break it down and digest it bit by bit. This is the first time that we're using the stateful way of declaring React components. Passing an object into `React.createClass()` will create a React component for you which you can then assign to a variable and use just like the stateless component we say earlier. There are some required properties on the object like a function called `render` and a function called `getInitialState`. 
+There is a lot of code here so lets break it down and digest it bit by bit. This is the first time that we're using the stateful way of declaring React components. Passing an object into `React.createClass()` will create a React component for you which you can then assign to a variable and use just like the stateless component we say earlier. There are some required properties on the object like a function called `render` and a function called `getInitialState`. The `render` function tells React what to put in place of the component when rendering the page and the `getInitialState` tells React what the starting state of the component should be.
+
+There are a couple of other members on the React component that you get for free. There is a function called `.setState()` which will let you modify the state of your component and a property called `.props` which you can use to access any data passed in through the attributes when the component is created. This is just like the `props` argument that we have seen in the past with stateless functions.
