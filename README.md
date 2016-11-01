@@ -7,9 +7,9 @@ Once we are done with this workshop, we are going to be able to read data from s
 
 ## Key Concepts
 
-### MVC
+### MV*
 
-MVC or Model-View-Controller is a common way of designing web applications and pages using a Javascript framework. In the Model-View-Controller pattern, the model is the data, the view are the UI elements that are presented to the user and the controller is the glue that pulls it all together. React is a view library which lets you create reusable UI components. In this case, the Particle cloud holds our model and we use jQuery as the controller code. 
+MVC or Model-View-Whatever is a common way of designing web applications and pages using a Javascript framework. There are plenty of keywords that go in place of the * in that acronym but some common ones are MVC and MVVM. We are going to be focusing on the MVC pattern but know that all of the patterns are employed commonly. In the Model-View-Controller pattern, the model is the data, the view are the UI elements that are presented to the user and the controller is the glue that pulls it all together. React is a view library which lets you create reusable UI components. In this case, the Particle cloud holds our model and we use jQuery as the controller code. 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/2000px-MVC-Process.svg.png" width="240" />
 
