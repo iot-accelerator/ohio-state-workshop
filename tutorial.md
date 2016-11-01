@@ -76,14 +76,15 @@ Part of the code snippet above is `particleService`. It is a helper class that w
 
 2. The next question that you might ask is how do we go about getting access to the functions included in `particleService`? This is where we'll talk about scope in JavaScript. Just writing functions in a file is not going to automatically "export" them to the world. We have to attach them to a known reference. That reference in the browser is called the `window` object. The `window` object is ever present in JavaScript written in the browser.
 
-```javascript
-// filename: a.js
-// loaded first
-window.foo = 'bar';
+    ```javascript
+    // filename: a.js
+    // loaded first
+    window.foo = 'bar';
 
-// filename: b.js
-// loaded second
-console.log(foo); // prints bar
-```
+    // filename: b.js
+    // loaded second
+    console.log(foo); // prints bar
+    ```
+As you can see from the example, we didn't even have to specify what object `foo` resides on because it resides on the `window` object. Generally speaking, JavaScript developers recommend against putting data on the `window` object (commonly referred to as "polluting the global scope") since it's a low level object and anyone from any other part of the app can change what's on `window` which can lead to confusion and bugs. But services like `particleService` should be put on the `window` object since we can then access them from anywhere. We're almost able to access `particleService` from our React component. There is one part missing.
 
-As you can see from the example, we didn't even have to specify what object `foo` resides on because it resides on the `window` object. Generally speaking, JavaScript developers recommend against putting data on the `window` object (commonly referred to as "polluting the global scope") since it's a low level object and anyone from any other part of the app can change what's on `window` which can lead to confusion and bugs. But services like `particleService` should be put on the `window` object since we can then access them from anywhere. We're almost able to access `particleService` from our React component. There is one part missing. 
+3. We need to tell the JavaScript engine to load the file. This is done through the `<script>` HTML tag. Using a `<script>` tag with the `src` attribute, I can tell the JavaScript engine in the browser to load up a JavaScript file. `<script>` tags are usually put in the main HTML file for the app since it's the entry point of the application or web page. 
