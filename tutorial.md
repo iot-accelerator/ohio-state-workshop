@@ -6,6 +6,8 @@ We are going to be using a REPL (read-evaluate-print-loop) tool called Plunker f
 
 The starting point for this workshop is located [here](https://plnkr.co/edit/jy8rqmDICZnCJNOY9fnI?p=info).
 
+The final version of the starting plunk is located [here](https://plnkr.co/edit/hBJQ2ArrNVMyWYeYeC7e?p=info).
+
 ## Getting Started
 
 Follow the link above to the starting checkpoint plunk. Once there, click the fork button to save a local copy so you can make edits to it.
@@ -87,4 +89,4 @@ Part of the code snippet above is `particleService`. It is a helper class that w
     ```
 As you can see from the example, we didn't even have to specify what object `foo` resides on because it resides on the `window` object. Generally speaking, JavaScript developers recommend against putting data on the `window` object (commonly referred to as "polluting the global scope") since it's a low level object and anyone from any other part of the app can change what's on `window` which can lead to confusion and bugs. But services like `particleService` should be put on the `window` object since we can then access them from anywhere. We're almost able to access `particleService` from our React component. There is one part missing.
 
-3. We need to tell the JavaScript engine to load the file. This is done through the `<script>` HTML tag. Using a `<script>` tag with the `src` attribute, I can tell the JavaScript engine in the browser to load up a JavaScript file. `<script>` tags are usually put in the main HTML file for the app since it's the entry point of the application or web page. 
+3. We need to tell the JavaScript engine to load the file. This is done through the `<script>` HTML tag. Using a `<script>` tag with the `src` attribute, I can tell the JavaScript engine in the browser to load up a JavaScript file. `<script>` tags are usually put in the main HTML file for the app since it's the entry point of the application or web page.
