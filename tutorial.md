@@ -90,3 +90,13 @@ Part of the code snippet above is `particleService`. It is a helper class that w
 As you can see from the example, we didn't even have to specify what object `foo` resides on because it resides on the `window` object. Generally speaking, JavaScript developers recommend against putting data on the `window` object (commonly referred to as "polluting the global scope") since it's a low level object and anyone from any other part of the app can change what's on `window` which can lead to confusion and bugs. But services like `particleService` should be put on the `window` object since we can then access them from anywhere. We're almost able to access `particleService` from our React component. There is one part missing.
 
 3. We need to tell the JavaScript engine to load the file. This is done through the `<script>` HTML tag. Using a `<script>` tag with the `src` attribute, I can tell the JavaScript engine in the browser to load up a JavaScript file. `<script>` tags are usually put in the main HTML file for the app since it's the entry point of the application or web page.
+
+## Building up the app
+
+Now that we have the basic infrastructure down, we'll add more functionality to our app. We'll break it down into 3 steps which are listed below,
+
+1. Adding more functionality to `particleService`
+2. Getting device data from the server
+3. Putting the data on the screen
+
+All of these can be found in the `checkpoints` folder under step 3, 4, 5 and 6. 
